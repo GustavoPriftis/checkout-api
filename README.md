@@ -1,16 +1,20 @@
 Checkout API Documentation
+
 This API provides a checkout system that applies various promotions to the shopping cart. This documentation explains how to interact with the API, run it locally, and test it.
 
 Base URL
+
 Local: http://localhost:3000
 Docker: Ensure that you map the container port to your host.
 
 Endpoints
+
 POST /api/checkout
 Description:
 Calculates the total amount for the items in the shopping cart while applying available promotions.
 
 Request Body:
+
 Send a JSON array of cart items. Each item should include the sku and the quantity.
 
 Example Request:
@@ -56,6 +60,7 @@ Example Response:
 }
 
 Using Postman
+
 Method: POST
 URL: http://localhost:3000/api/checkout
 Set the Request Body:
@@ -70,16 +75,21 @@ Editar
   { "sku": "120P90", "quantity": 3 },
   { "sku": "A304SD", "quantity": 4 }
 ]
+
 Send the Request:
+
 Observe the response and save the request in your collection for future testing or sharing with your team.
 
 Additional Notes
+
 Error Handling: The API returns a 500 status code with an error message if any server error occurs during checkout.
 Extensibility: The API is designed to be extensible. Additional promotions can be added to the business logic in the checkout service.
 Logging: Server-side logs provide details on requests and processing steps. Check the application logs for debugging and monitoring.
 Testing: Unit and integration tests are included to ensure proper functionality. Feel free to run tests using your preferred NodeJS testing framework (e.g., Jest).
 Build and Run Instructions
+
 Running Locally
+
 Install Dependencies:
 
 npm install
