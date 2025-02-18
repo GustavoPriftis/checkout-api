@@ -1,13 +1,13 @@
-Checkout API Documentation
+*Checkout API Documentation*
 
 This API provides a checkout system that applies various promotions to the shopping cart. This documentation explains how to interact with the API, run it locally, and test it.
 
-Base URL
+*Base URL*
 
 Local: http://localhost:3000
 Docker: Ensure that you map the container port to your host.
 
-Endpoints
+*Endpoints*
 
 POST /api/checkout
 Description:
@@ -59,7 +59,7 @@ Example Response:
   ]
 }
 
-Using Postman
+*Using Postman*
 
 Method: POST
 URL: http://localhost:3000/api/checkout
@@ -68,15 +68,13 @@ Set the Request Body:
 Go to the Body tab.
 Select raw and choose JSON as the format.
 Paste the following JSON:
-json
-Copiar
-Editar
+
 [
   { "sku": "120P90", "quantity": 3 },
   { "sku": "A304SD", "quantity": 4 }
 ]
 
-Send the Request:
+*Send the Request:*
 
 Observe the response and save the request in your collection for future testing or sharing with your team.
 
@@ -88,7 +86,7 @@ Logging: Server-side logs provide details on requests and processing steps. Chec
 Testing: Unit and integration tests are included to ensure proper functionality. Feel free to run tests using your preferred NodeJS testing framework (e.g., Jest).
 Build and Run Instructions
 
-Running Locally
+*Running Locally*
 
 Install Dependencies:
 
