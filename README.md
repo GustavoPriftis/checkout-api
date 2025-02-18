@@ -1,4 +1,5 @@
 API Documentation
+
 This API provides a checkout system that applies various promotions to the shopping cart. Below are the details on how to interact with the API.
 
 Base URL
